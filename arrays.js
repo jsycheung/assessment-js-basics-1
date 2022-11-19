@@ -21,6 +21,7 @@ colorCopy.push("blue");
 const numbers = [1, 2, 3, 4, 5];
 
 //CODE HERE
+let middleNums = numbers.slice(1, 4);
 
 //////////////////PROBLEM 4////////////////////
 /* 
