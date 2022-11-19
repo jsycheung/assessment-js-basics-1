@@ -10,6 +10,8 @@
 */
 
 //CODE HERE
+let gitDefinition =
+  "Git is a version control system that allows individuals and teams to track changes to code projects, prevents bugs and loss of progress, and allows users to view the long history of a project in snapshots.";
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +20,8 @@
 */
 
 //CODE HERE
+let gitHubDefinition =
+  "GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.";
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -26,6 +30,8 @@
 */
 
 //CODE HERE
+let gitInitDefinition =
+  "'git init' initialize a local repository in the folder you are situated in.";
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -34,6 +40,8 @@
 */
 
 //CODE HERE
+let gitClone =
+  "'git clone' points to an existing repo and make a clone or copy of that repo in a new directory at another location.";
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -42,6 +50,8 @@
 */
 
 //CODE HERE
+let gitStatusDefinition =
+  "'git Status' is used to check the information about the repo.";
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -53,6 +63,8 @@
 */
 
 //CODE HERE
+let gitAddDefinition = "'git add' adds file(s) to be tracked.";
+let gitAddCode = "git add .";
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -64,6 +76,8 @@
 */
 
 //CODE HERE
+let gitCommitDefinition =
+  "'git commit' creates a snapshot of the files that the user is tracking.";
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -72,3 +86,5 @@
 */
 
 //CODE HERE
+let gitPushDefinition =
+  "'git push' uploads local repository content to a remote repository.";
