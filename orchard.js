@@ -50,9 +50,10 @@ const pinkPrice = 0.55;
 // CODE HERE
 let totalAcres = 0;
 for (let i = 0; i < fujiAcres.length; i++) {
-  totalAcres += fujiAcres[i];
-  totalAcres += galaAcres[i];
-  totalAcres += pinkAcres[i];
+  //loop through 7 days of the week, which is equal to the length of fujiAcres (or galaAcres or pinkAcres);
+  totalAcres += fujiAcres[i]; //Add the number of acres picked for fuji apples in one of the days
+  totalAcres += galaAcres[i]; //Add the number of acres picked for gala apples in one of the days
+  totalAcres += pinkAcres[i]; //Add the number of acres picked for pink apples in one of the days
 }
 console.log("Total number of acres picked for the entire week = " + totalAcres);
 
@@ -69,7 +70,7 @@ console.log("Total number of acres picked for the entire week = " + totalAcres);
 */
 
 // CODE HERE
-let averageDailyAcres = totalAcres / fujiAcres.length;
+let averageDailyAcres = totalAcres / fujiAcres.length; // The average number of acres picked per day equals the total number of acres picked divided by the number of days in a week (which is equal to the length of fujiAcres)
 console.log(
   "The average number of acres picked per day = " + averageDailyAcres
 );
@@ -108,8 +109,9 @@ let days = 0;
 
 // CODE HERE
 while (acresLeft > 0) {
-  acresLeft -= averageDailyAcres;
-  days += 1;
+  // count the number of days of work left only if there is any acres left to be picked
+  acresLeft -= averageDailyAcres; // In each iteration of the loop, we subtract the daily average from the number of acres left to indicate that we record a day of work needed to pick the daily average of acres.
+  days += 1; // We record a day of work needed before proceeding to the next iteration.
 }
 console.log("Number of days of work left = " + days);
 
@@ -143,9 +145,10 @@ let fujiTons = [];
 let galaTons = [];
 let pinkTons = [];
 for (let i = 0; i < fujiAcres.length; i++) {
-  fujiTons.push(fujiAcres[i] * 6.5);
-  galaTons.push(galaAcres[i] * 6.5);
-  pinkTons.push(pinkAcres[i] * 6.5);
+  // loop through 7 days of the week
+  fujiTons.push(fujiAcres[i] * 6.5); // log the amount of fuji apples picked in a day to the fujiTons array
+  galaTons.push(galaAcres[i] * 6.5); // log the amount of gala apples picked in a day to the galaTons array
+  pinkTons.push(pinkAcres[i] * 6.5); // log the amount of pink apples picked in a day to the pinkTons array
 }
 console.log("Daily amount of fuji apples picked in tons = " + fujiTons);
 console.log("Daily amount of gala apples picked in tons = " + galaTons);
@@ -173,9 +176,10 @@ let fujiPounds = 0;
 let galaPounds = 0;
 let pinkPounds = 0;
 for (let i = 0; i < fujiTons.length; i++) {
-  fujiPounds += fujiTons[i] * 2000;
-  galaPounds += galaTons[i] * 2000;
-  pinkPounds += pinkTons[i] * 2000;
+  // loop through 7 days of the week to get the total weekly number of pounds picked for each variety.
+  fujiPounds += fujiTons[i] * 2000; // add the number of pounds of fuji apples picked in a day to fujiPounds
+  galaPounds += galaTons[i] * 2000; // add the number of pounds of gala apples picked in a day to galaPounds
+  pinkPounds += pinkTons[i] * 2000; // add the number of pounds of pink apples picked in a day to pinkPounds
 }
 console.log("Total number of pounds picked for fuji apples = " + fujiPounds);
 console.log("Total number of pounds picked for gala apples = " + galaPounds);
@@ -199,9 +203,9 @@ console.log("Total number of pounds picked for pink apples = " + pinkPounds);
 
 // CODE HERE
 
-let fujiProfit = fujiPounds * fujiPrice;
-let galaProfit = galaPounds * galaPrice;
-let pinkProfit = pinkPounds * pinkPrice;
+let fujiProfit = fujiPounds * fujiPrice; // profit made from fuji apples equals to the pounds of fuji apples picked times the price of fuji apples per pound
+let galaProfit = galaPounds * galaPrice; // profit made from gala apples equals to the pounds of gala apples picked times the price of gala apples per pound
+let pinkProfit = pinkPounds * pinkPrice; // profit made from pink apples equals to the pounds of pink apples picked times the price of pink apples per pound
 console.log("Profit for fuji apples in cents = " + fujiProfit);
 console.log("Profit for gala apples in cents = " + galaProfit);
 console.log("Profit for pink apples in cents = " + pinkProfit);
@@ -217,5 +221,5 @@ console.log("Profit for pink apples in cents = " + pinkProfit);
 */
 
 // CODE HERE
-let totalProfit = fujiProfit + galaProfit + pinkProfit;
+let totalProfit = fujiProfit + galaProfit + pinkProfit; // find the total profit by adding up the profit made for each variety
 console.log("Total profit = " + totalProfit);
