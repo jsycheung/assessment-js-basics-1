@@ -197,6 +197,13 @@ console.log(pinkPounds);
 
 // CODE HERE
 
+let fujiProfit = fujiPounds * fujiPrice;
+let galaProfit = galaPounds * galaPrice;
+let pinkProfit = pinkPounds * pinkPrice;
+console.log(fujiProfit);
+console.log(galaProfit);
+console.log(pinkProfit);
+
 // PROBLEM 7
 
 /*
