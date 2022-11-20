@@ -69,6 +69,8 @@ console.log(totalAcres);
 */
 
 // CODE HERE
+let averageDailyAcres = totalAcres / fujiAcres.length;
+console.log(averageDailyAcres);
 
 // PROBLEM 3
 
