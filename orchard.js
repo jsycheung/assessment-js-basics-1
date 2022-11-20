@@ -48,6 +48,13 @@ const pinkPrice = 0.55;
 */
 
 // CODE HERE
+let totalAcres = 0;
+for (let i = 0; i < fujiAcres.length; i++) {
+  totalAcres += fujiAcres[i];
+  totalAcres += galaAcres[i];
+  totalAcres += pinkAcres[i];
+}
+console.log(totalAcres);
 
 // PROBLEM 2
 
