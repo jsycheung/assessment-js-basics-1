@@ -167,9 +167,17 @@ console.log(pinkTons);
 
 // CODE HERE
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = 0;
+let galaPounds = 0;
+let pinkPounds = 0;
+for (let i = 0; i < fujiTons.length; i++) {
+  fujiPounds += fujiTons[i] * 2000;
+  galaPounds += galaTons[i] * 2000;
+  pinkPounds += pinkTons[i] * 2000;
+}
+console.log(fujiPounds);
+console.log(galaPounds);
+console.log(pinkPounds);
 
 // PROBLEM 6
 
@@ -188,10 +196,6 @@ console.log(pinkTons);
 */
 
 // CODE HERE
-
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
 
 // PROBLEM 7
 
