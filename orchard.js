@@ -54,7 +54,7 @@ for (let i = 0; i < fujiAcres.length; i++) {
   totalAcres += galaAcres[i];
   totalAcres += pinkAcres[i];
 }
-console.log(totalAcres);
+console.log("Total number of acres picked for the entire week = " + totalAcres);
 
 // PROBLEM 2
 
@@ -70,7 +70,9 @@ console.log(totalAcres);
 
 // CODE HERE
 let averageDailyAcres = totalAcres / fujiAcres.length;
-console.log(averageDailyAcres);
+console.log(
+  "The average number of acres picked per day = " + averageDailyAcres
+);
 
 // PROBLEM 3
 
@@ -109,7 +111,7 @@ while (acresLeft > 0) {
   acresLeft -= averageDailyAcres;
   days += 1;
 }
-console.log(days);
+console.log("Number of days of work left = " + days);
 
 // PROBLEM 4
 
@@ -145,9 +147,9 @@ for (let i = 0; i < fujiAcres.length; i++) {
   galaTons.push(galaAcres[i] * 6.5);
   pinkTons.push(pinkAcres[i] * 6.5);
 }
-console.log(fujiTons);
-console.log(galaTons);
-console.log(pinkTons);
+console.log("Daily amount of fuji apples picked in tons = " + fujiTons);
+console.log("Daily amount of gala apples picked in tons = " + galaTons);
+console.log("Daily amount of pink apples picked in tons = " + pinkTons);
 
 // PROBLEM 5
 
@@ -175,9 +177,9 @@ for (let i = 0; i < fujiTons.length; i++) {
   galaPounds += galaTons[i] * 2000;
   pinkPounds += pinkTons[i] * 2000;
 }
-console.log(fujiPounds);
-console.log(galaPounds);
-console.log(pinkPounds);
+console.log("Total number of pounds picked for fuji apples = " + fujiPounds);
+console.log("Total number of pounds picked for gala apples = " + galaPounds);
+console.log("Total number of pounds picked for pink apples = " + pinkPounds);
 
 // PROBLEM 6
 
@@ -200,9 +202,9 @@ console.log(pinkPounds);
 let fujiProfit = fujiPounds * fujiPrice;
 let galaProfit = galaPounds * galaPrice;
 let pinkProfit = pinkPounds * pinkPrice;
-console.log(fujiProfit);
-console.log(galaProfit);
-console.log(pinkProfit);
+console.log("Profit for fuji apples in cents = " + fujiProfit);
+console.log("Profit for gala apples in cents = " + galaProfit);
+console.log("Profit for pink apples in cents = " + pinkProfit);
 
 // PROBLEM 7
 
@@ -215,3 +217,5 @@ console.log(pinkProfit);
 */
 
 // CODE HERE
+let totalProfit = fujiProfit + galaProfit + pinkProfit;
+console.log("Total profit = " + totalProfit);
